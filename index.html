@@ -8,12 +8,11 @@
     <style>
         /* Set a background image for the loading screen */
         body {
-            background-image: url('https://github.com/9yelk/maka-paka/blob/main/xv5sm87wto441.jpg?raw=true'); /* Replace with your actual image URL */
+            background-image: url('https://raw.githubusercontent.com/9yelk/maka-paka/main/xv5sm87wto441.jpg'); /* Corrected image URL */
             background-size: cover; /* Make the image cover the entire screen */
             background-position: center; /* Center the image */
             font-family: Arial, sans-serif;
             text-align: center;
-            margin-top: 50px;
             height: 100vh; /* Full height of the viewport */
             color: white; /* Change text color if needed */
         }
@@ -41,11 +40,11 @@
         }
     </script>
 </head>
-<body onload="checkPassword()">
-    <h1>fr6yeli</h1>
+<body>
+    <h1>for6yeli</h1>
 
     <!-- Hidden content until the password is entered -->
-    <div id="content" style="display:none;">
+    <div id="content">
         <audio controls>
             <source src="voice-note1(surah-fajr).mp3" type="audio/mpeg">
             Your browser does not support the audio element.
@@ -57,15 +56,15 @@
             Your browser does not support the audio element.
         </audio>
 
-    <!-- Text to disappear -->
-    <p id="disappearing-text">a lil smth for you, i love you so much.</p>
-</div>
+        <!-- Text to disappear -->
+        <p id="disappearing-text">a lil smth for you, i love you so much.</p>
+    </div>
 
-<script>
-    // Hide the text after 1.8 seconds (1800 milliseconds)
-    setTimeout(function() {
-        document.getElementById('disappearing-text').style.display = 'none';
-    }, 1800);
-</script>
+    <script>
+        // Hide the text after 1.8 seconds (1800 milliseconds)
+        setTimeout(function() {
+            document.getElementById('disappearing-text').style.display = 'none';
+        }, 1800);
+    </script>
 </body>
 </html>
