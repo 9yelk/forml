@@ -11,6 +11,7 @@
             background-image: url('https://raw.githubusercontent.com/9yelk/maka-paka/main/xv5sm87wto441.jpg'); /* Corrected image URL */
             background-size: cover; /* Make the image cover the entire screen */
             background-position: center; /* Center the image */
+            overflow: hidden; /* Prevent scrolling */
             font-family: Arial, sans-serif;
             text-align: center;
             height: 100vh; /* Full height of the viewport */
@@ -28,7 +29,7 @@
             var password = prompt("Enter password:");
             if (password === "anabhebdyeli") { // Replace with your actual password
                 document.getElementById('content').style.display = 'block';
-                document.body.style.backgroundImage = 'none'; // Remove background image after loading
+                
             } else {
                 alert("Incorrect password!");
                 document.body.innerHTML = ""; // Clear the body if the password is incorrect
