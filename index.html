@@ -1,31 +1,48 @@
- <meta charset="UTF-8">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formybby</title>
+    <title>rcrdz</title>
+    
     <style>
-        /* Set background color to pink */
+        /* Set a background image for the loading screen */
         body {
-            background-color: pink;
+            background-image: url('https://github.com/9yelk/maka-paka/blob/main/ichoosethistbh.jpeg?raw=true'); /* Replace with your actual image URL */
+            background-size: cover; /* Make the image cover the entire screen */
+            background-position: center; /* Center the image */
             font-family: Arial, sans-serif;
             text-align: center;
             margin-top: 50px;
+            height: 100vh; /* Full height of the viewport */
+            color: white; /* Change text color if needed */
         }
-        audio {
-            margin-bottom: 20px;
+
+        /* Hide the main content until the page is fully loaded */
+        #content {
+            display: none;
         }
     </style>
+
     <script type="text/javascript">
         function checkPassword() {
             var password = prompt("Enter password:");
-            if (password === "anabhebdyeli") {  // Change 'yourpassword' to whatever you want
+            if (password === "anabhebdyeli") { // Replace with your actual password
                 document.getElementById('content').style.display = 'block';
+                document.body.style.backgroundImage = 'none'; // Remove background image after loading
             } else {
                 alert("Incorrect password!");
+                document.body.innerHTML = ""; // Clear the body if the password is incorrect
             }
+        }
+
+        window.onload = function() {
+            checkPassword();
         }
     </script>
 </head>
 <body onload="checkPassword()">
-    <h1>Protected Recordings</h1>
+    <h1>Formybbys</h1>
 
     <!-- Hidden content until the password is entered -->
     <div id="content" style="display:none;">
@@ -36,7 +53,7 @@
         <br>
 
         <audio controls>
-            <source src="voice-note2.mp3" type="audio/mpeg">
+            <source src="voice-note2(surah-rahman).mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
     </div>
